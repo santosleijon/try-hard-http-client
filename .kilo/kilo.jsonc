@@ -24,6 +24,7 @@
       "pom.xml": "allow",
       "src/main/java/**/*.java": "allow",
       "src/test/java/**/*.java": "allow",
+      "README.md": "allow",
       "*": "ask"
     },
     "bash": {
