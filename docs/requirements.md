@@ -17,8 +17,7 @@ The library must use composition. It must not replace or reimplement HTTP protoc
 **REQ-004:** The library shall provide an asynchronous send operation returning
 `CompletableFuture<HttpResponse<T>>`.
 
-**REQ-005:** The send operation shall accept a `Supplier<HttpRequest>` so that a new request can be created for every
-attempt.
+**REQ-005:** The send operation shall accept a `Supplier<HttpRequest>` so that a new request can be created for every attempt.
 
 **REQ-006:** `maxAttempts` shall mean the total number of attempts, including the initial attempt.
 
@@ -26,7 +25,7 @@ attempt.
 
 **REQ-008:** When `maxAttempts` is reached, the final HTTP response shall be returned to the caller.
 
-**REQ-009:** Retry delays shall use an injected scheduler and shall not use `Thread.sleep`.
+**REQ-009:** Retry delays shall be made with a single shared, lazily-initialized, optionally injected, thread-safe scheduler backed by daemon threads, and not `Thread.sleep`.
 
 **REQ-010:** POST or PATCH requests shall not be retried by default.
 

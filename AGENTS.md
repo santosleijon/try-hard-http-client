@@ -21,15 +21,15 @@ Read `docs/requirements.md` before changing production code.
 ## Architecture
 
 - Wrap `java.net.http.HttpClient` using composition.
-- Keep transport, retry policy, delay calculation, scheduling and
-  observability separate.
+- Keep transport, retry policy, delay calculation, scheduling and observability separate.
 - Prefer immutable value objects and constructor injection.
 - Production code must be thread-safe.
-- Do not create global mutable state.
+- Avoid global mutable state when possible.
 - Do not retain unbounded request history.
 - Do not use `Thread.sleep`.
 - Do not create one underlying HttpClient per request.
 - Do not add dependencies without approval.
+- Separate the public API from the implementation by creating interfaces in a separate `com.example.tryhardhttpclient.api` package.
 
 ## Retry safety
 
@@ -49,6 +49,8 @@ Read `docs/requirements.md` before changing production code.
 
 ## Testing
 
+- Use JUnit 5 and the JDK embeedded HTTP server `com.sun.net.httpserver.HttpServer` for testing.
+- Use `maven-surefire-plugin` to execute tests.
 - Write unit tests to test retry logic with fake clocks, schedulers and randomness.
 - Do not test backoff using real multi-second waits.
 - Use a localhost HTTP server for HTTP integration tests.
@@ -56,3 +58,4 @@ Read `docs/requirements.md` before changing production code.
 - Put timeouts on asynchronous and integration tests.
 - Include concurrency, cancellation and body-replay tests.
 - Do not mock the library behavior under test.
+- Mocked components, such as mocks of `HttpClient`, should be put in separate classes for readability and reusability.
