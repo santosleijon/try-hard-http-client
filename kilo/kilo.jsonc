@@ -21,7 +21,9 @@
       "AGENTS.md": "deny",
       "kilo.jsonc": "deny",
       ".kilo/**": "deny",
-      "docs/requirements.md": "deny"
+      "docs/requirements.md": "deny",
+      "pom.xml": "allow",
+      "*.java": "allow"
     },
     "bash": {
       "*": "ask",
@@ -34,7 +36,8 @@
       "git push *": "deny",
       "git tag *": "deny",
       "curl *": "deny",
-      "wget *": "deny"
+      "wget *": "deny",
+      "javap": "allow"
     },
     "task": "ask",
     "websearch": "ask",
