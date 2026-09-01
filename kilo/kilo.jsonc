@@ -1,0 +1,43 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "snapshot": false,
+  "permission": {
+    "*": "ask",
+    "external_directory": "deny",
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.p12": "deny",
+      "*.pfx": "deny",
+      "*.jks": "deny",
+      "*.key": "deny"
+    },
+    "edit": {
+      "*": "ask",
+      "target/**": "deny",
+      ".git/**": "deny",
+      ".github/**": "deny",
+      "AGENTS.md": "deny",
+      "kilo.jsonc": "deny",
+      ".kilo/**": "deny",
+      "docs/requirements.md": "deny"
+    },
+    "bash": {
+      "*": "ask",
+      "rm *": "deny",
+      "rmdir *": "deny",
+      "del *": "deny",
+      "git clean *": "deny",
+      "git reset *": "deny",
+      "git commit *": "deny",
+      "git push *": "deny",
+      "git tag *": "deny",
+      "curl *": "deny",
+      "wget *": "deny"
+    },
+    "task": "ask",
+    "websearch": "ask",
+    "webfetch": "ask"
+  }
+}
