@@ -14,7 +14,6 @@
       "*.key": "deny"
     },
     "edit": {
-      "*": "ask",
       "target/**": "deny",
       ".git/**": "deny",
       ".github/**": "deny",
@@ -23,7 +22,9 @@
       ".kilo/**": "deny",
       "docs/requirements.md": "deny",
       "pom.xml": "allow",
-      "*.java": "allow"
+      "src/main/java/**/*.java": "allow",
+      "src/test/java/**/*.java": "allow",
+      "*": "ask"
     },
     "bash": {
       "*": "ask",
