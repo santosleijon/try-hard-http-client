@@ -1,8 +1,8 @@
-package com.example.tryhardhttpclient;
+package com.github.santosleijon.tryhardhttpclient;
 
-import com.example.tryhardhttpclient.api.DelayStrategy;
-import com.example.tryhardhttpclient.api.RetryPolicy;
-import com.example.tryhardhttpclient.api.TryHardHttpClient;
+import com.github.santosleijon.tryhardhttpclient.api.DelayStrategy;
+import com.github.santosleijon.tryhardhttpclient.api.RetryPolicy;
+import com.github.santosleijon.tryhardhttpclient.api.TryHardHttpClient;
 import com.sun.net.httpserver.HttpServer;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -18,7 +18,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
 import java.util.Set;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.junit.jupiter.api.Assertions.*;

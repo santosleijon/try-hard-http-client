@@ -1,14 +1,12 @@
-package com.example.tryhardhttpclient.impl;
+package com.github.santosleijon.tryhardhttpclient.impl;
 
-import com.example.tryhardhttpclient.CapturingRetryScheduler;
-import com.example.tryhardhttpclient.FakeHttpClient;
-import com.example.tryhardhttpclient.FakeHttpResponse;
-import com.example.tryhardhttpclient.ImmediateRetryScheduler;
-import com.example.tryhardhttpclient.api.DelayStrategy;
-import com.example.tryhardhttpclient.api.RetryContext;
-import com.example.tryhardhttpclient.api.RetryDecision;
-import com.example.tryhardhttpclient.api.RetryPolicy;
-import com.example.tryhardhttpclient.api.TryHardHttpClient;
+import com.github.santosleijon.tryhardhttpclient.CapturingRetryScheduler;
+import com.github.santosleijon.tryhardhttpclient.FakeHttpClient;
+import com.github.santosleijon.tryhardhttpclient.FakeHttpResponse;
+import com.github.santosleijon.tryhardhttpclient.ImmediateRetryScheduler;
+import com.github.santosleijon.tryhardhttpclient.api.DelayStrategy;
+import com.github.santosleijon.tryhardhttpclient.api.RetryPolicy;
+import com.github.santosleijon.tryhardhttpclient.api.TryHardHttpClient;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -17,14 +15,9 @@ import java.net.URI;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.CompletionException;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.junit.jupiter.api.Assertions.*;

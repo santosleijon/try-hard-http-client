@@ -1,7 +1,7 @@
-package com.example.tryhardhttpclient;
+package com.github.santosleijon.tryhardhttpclient;
 
-import com.example.tryhardhttpclient.api.RetryScheduler;
-import com.example.tryhardhttpclient.api.ScheduledTask;
+import com.github.santosleijon.tryhardhttpclient.api.RetryScheduler;
+import com.github.santosleijon.tryhardhttpclient.api.ScheduledTask;
 
 import java.time.Duration;
 import java.util.ArrayList;

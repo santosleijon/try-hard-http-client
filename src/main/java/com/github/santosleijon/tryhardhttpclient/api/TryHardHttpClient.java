@@ -1,6 +1,6 @@
-package com.example.tryhardhttpclient.api;
+package com.github.santosleijon.tryhardhttpclient.api;
 
-import com.example.tryhardhttpclient.impl.DefaultTryHardHttpClient;
+import com.github.santosleijon.tryhardhttpclient.impl.DefaultTryHardHttpClient;
 
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

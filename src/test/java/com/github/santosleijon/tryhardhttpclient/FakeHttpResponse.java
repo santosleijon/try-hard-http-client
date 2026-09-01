@@ -1,4 +1,4 @@
-package com.example.tryhardhttpclient;
+package com.github.santosleijon.tryhardhttpclient;
 
 import javax.net.ssl.SSLSession;
 import java.net.URI;

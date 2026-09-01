@@ -29,7 +29,7 @@ Read `docs/requirements.md` before changing production code.
 - Do not use `Thread.sleep`.
 - Do not create one underlying HttpClient per request.
 - Do not add dependencies without approval.
-- Separate the public API from the implementation by creating interfaces in a separate `com.example.tryhardhttpclient.api` package.
+- Separate the public API from the implementation by creating interfaces in a separate `com.github.santosleijon.tryhardhttpclient.api` package.
 
 ## Retry safety
 

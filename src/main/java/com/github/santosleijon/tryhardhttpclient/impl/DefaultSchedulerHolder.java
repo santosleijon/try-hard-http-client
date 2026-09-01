@@ -1,9 +1,8 @@
-package com.example.tryhardhttpclient.impl;
+package com.github.santosleijon.tryhardhttpclient.impl;
 
-import com.example.tryhardhttpclient.api.RetryScheduler;
-import com.example.tryhardhttpclient.api.ScheduledTask;
+import com.github.santosleijon.tryhardhttpclient.api.RetryScheduler;
+import com.github.santosleijon.tryhardhttpclient.api.ScheduledTask;
 
-import java.time.Duration;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;

@@ -12,8 +12,8 @@ A small Java 21 library that wraps `java.net.http.HttpClient` with configurable 
 Add the library to your project and build a client:
 
 ```java
-import com.example.tryhardhttpclient.api.TryHardHttpClient;
-import com.example.tryhardhttpclient.api.RetryPolicy;
+import api.com.github.santosleijon.tryhardhttpclient.TryHardHttpClient;
+import api.com.github.santosleijon.tryhardhttpclient.RetryPolicy;
 
 HttpClient httpClient = HttpClient.newHttpClient();
 
@@ -129,7 +129,7 @@ TryHardHttpClient client = TryHardHttpClient.builder(httpClient)
 
 ## API overview
 
-All public types live in `com.example.tryhardhttpclient.api`.
+All public types live in `com.github.santosleijon.tryhardhttpclient.api`.
 
 | Type | Role |
 |---|---|
@@ -142,7 +142,7 @@ All public types live in `com.example.tryhardhttpclient.api`.
 | `RetryScheduler` | Schedules a `Runnable` after a `Duration`. Returns a `ScheduledTask` cancel handle. |
 | `ScheduledTask` | Cancel handle returned by `RetryScheduler.schedule()`. |
 
-Implementations are in `com.example.tryhardhttpclient.impl` and are not part of the public API.
+Implementations are in `com.github.santosleijon.tryhardhttpclient.impl` and are not part of the public API.
 
 ## Key design decisions
 

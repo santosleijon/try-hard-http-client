@@ -1,6 +1,6 @@
-package com.example.tryhardhttpclient.api;
+package com.github.santosleijon.tryhardhttpclient.api;
 
-import com.example.tryhardhttpclient.impl.DefaultRetryPolicy;
+import com.github.santosleijon.tryhardhttpclient.impl.DefaultRetryPolicy;
 
 import java.util.Set;
 

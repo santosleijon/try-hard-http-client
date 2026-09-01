@@ -1,6 +1,6 @@
-package com.example.tryhardhttpclient;
+package com.github.santosleijon.tryhardhttpclient;
 
-import com.example.tryhardhttpclient.api.DelayStrategy;
+import com.github.santosleijon.tryhardhttpclient.api.DelayStrategy;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;

@@ -1,4 +1,4 @@
-package com.example.tryhardhttpclient.api;
+package com.github.santosleijon.tryhardhttpclient.api;
 
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;

@@ -1,9 +1,9 @@
-package com.example.tryhardhttpclient.impl;
+package com.github.santosleijon.tryhardhttpclient.impl;
 
-import com.example.tryhardhttpclient.api.DelayStrategy;
-import com.example.tryhardhttpclient.api.RetryContext;
-import com.example.tryhardhttpclient.api.RetryDecision;
-import com.example.tryhardhttpclient.api.RetryPolicy;
+import com.github.santosleijon.tryhardhttpclient.api.DelayStrategy;
+import com.github.santosleijon.tryhardhttpclient.api.RetryContext;
+import com.github.santosleijon.tryhardhttpclient.api.RetryDecision;
+import com.github.santosleijon.tryhardhttpclient.api.RetryPolicy;
 
 import javax.net.ssl.SSLException;
 import java.time.Duration;

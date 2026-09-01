@@ -1,4 +1,4 @@
-package com.example.tryhardhttpclient.api;
+package com.github.santosleijon.tryhardhttpclient.api;
 
 /**
  * A handle to a task that has been submitted to a {@link RetryScheduler}.

@@ -1,11 +1,11 @@
-package com.example.tryhardhttpclient.impl;
+package com.github.santosleijon.tryhardhttpclient.impl;
 
-import com.example.tryhardhttpclient.api.RetryContext;
-import com.example.tryhardhttpclient.api.RetryDecision;
-import com.example.tryhardhttpclient.api.RetryPolicy;
-import com.example.tryhardhttpclient.api.RetryScheduler;
-import com.example.tryhardhttpclient.api.ScheduledTask;
-import com.example.tryhardhttpclient.api.TryHardHttpClient;
+import com.github.santosleijon.tryhardhttpclient.api.RetryContext;
+import com.github.santosleijon.tryhardhttpclient.api.RetryDecision;
+import com.github.santosleijon.tryhardhttpclient.api.RetryPolicy;
+import com.github.santosleijon.tryhardhttpclient.api.RetryScheduler;
+import com.github.santosleijon.tryhardhttpclient.api.ScheduledTask;
+import com.github.santosleijon.tryhardhttpclient.api.TryHardHttpClient;
 
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

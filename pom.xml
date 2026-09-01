@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
+  <groupId>com.github.santosleijon</groupId>
   <artifactId>try-hard-http-client</artifactId>
   <version>1.0-SNAPSHOT</version>
   <properties>
