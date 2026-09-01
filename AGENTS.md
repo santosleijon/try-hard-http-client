@@ -59,3 +59,8 @@ Read `docs/requirements.md` before changing production code.
 - Include concurrency, cancellation and body-replay tests.
 - Do not mock the library behavior under test.
 - Mocked components, such as mocks of `HttpClient`, should be put in separate classes for readability and reusability.
+
+## Documentation
+
+- Document use cases and the key design decision in the `README.md` file in the root folder.
+- Update the documentation alongside production code when changes are made.
